@@ -438,6 +438,4 @@ angular.module('schemaForm').filter('selectFilter', [function ($filter) {
         return data;
     };
 }]);
-
-return angularSchemaFormDynamicSelect;
 }));
