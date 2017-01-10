@@ -1,4 +1,4 @@
-<div ng-controller="dynamicSelectController" class="form-group"
+<div ng-controller="dynamicSelectController" class="form-group {{form.htmlClass}}"
      ng-class="{'has-error': hasError(), 'has-success': hasSuccess(), 'has-feedback': form.feedback !== false}"
          ng-init="insideModel=$$value$$;">
     <label class="control-label {{form.labelHtmlClass}}" ng-show="showTitle()">{{form.title}}</label>
