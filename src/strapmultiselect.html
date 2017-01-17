@@ -1,6 +1,6 @@
 <div ng-controller="dynamicSelectController" class="form-group {{form.htmlClass}}"
      ng-class="{'has-error': hasError(), 'has-success': hasSuccess()}">
-    <label class="control-label {{form.labelHtmlClass}}" ng-show="showTitle()">{{form.title}}</label>
+    <label class="control-label {{form.labelHtmlClass}}" ng-class="{'required' : form.required}" ng-show="showTitle()">{{form.title}}</label>
 
     <div class="form-group {{form.fieldHtmlClass}}" ng-init="populateTitleMap(form)">
         <button type="button" class="btn btn-default" sf-changed="form" schema-validate="form" ng-model="$$value$$"
